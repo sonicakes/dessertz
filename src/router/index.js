@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue';
 import ProductList from '../views/ProductList.vue';
-// import PostDetailView from '../views/PostDetail.vue';
+import ProductDetailView from '../views/ProductDetail.vue';
 // import ModalsView from '../views/Modals.vue';
 import Cart from '../views/Cart.vue';
 
@@ -19,11 +19,11 @@ const router = createRouter({
       name: 'product-list',
       component: ProductList
     },
-    // {
-    //   path: '/postDetail/:id',
-    //   name: 'postDetail',
-    //   component: PostDetailView
-    // },
+    {
+      path: '/productDetail/:id',
+      name: 'productDetail',
+      component: ProductDetailView
+    },
     // {
     //   path: '/modals',
     //   name: 'modals',

@@ -16,6 +16,10 @@
 </template>
 
 <style scoped>
+@font-face {
+  font-family: redhat;
+  src: url("assets/fonts/static/RedHatText-Regular.ttf");
+}
 .link {
   color: navy;
   padding: 10px;
@@ -23,5 +27,7 @@
 .content {
   display: flex;
   justify-content: center;
+  font-family: redhat;
+  flex-direction: column;
 }
 </style>
