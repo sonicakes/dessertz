@@ -1,13 +1,27 @@
 <template>
-  <h1>Hello App!</h1>
+  <div class="content">
+  <h1>Hello Dessertz App!</h1>
   <p>
     <strong>Current route path:</strong> {{ $route.fullPath }}
   </p>
   <nav>
-    <RouterLink to="/">Go to Home</RouterLink>
-    <RouterLink to="/cart">Go to Cart</RouterLink>
+    <RouterLink to="/" class="link">Go to Home</RouterLink>
+    <RouterLink to="/product-list" class="link">Product List</RouterLink>
+    <RouterLink to="/cart" class="link">Go to Cart</RouterLink>
   </nav>
   <main>
     <RouterView />
   </main>
+</div>
 </template>
+
+<style scoped>
+.link {
+  color: navy;
+  padding: 10px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+</style>
