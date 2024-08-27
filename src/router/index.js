@@ -17,12 +17,14 @@ const router = createRouter({
     {
       path: '/product-list',
       name: 'product-list',
-      component: ProductList
+      component: ProductList,
+      props: true
     },
     {
       path: '/productDetail/:id',
       name: 'productDetail',
-      component: ProductDetailView
+      component: ProductDetailView,
+      props: true
     },
     // {
     //   path: '/modals',
